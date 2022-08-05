@@ -6,7 +6,7 @@ import Button from '../Button/Button';
 import {ItemFlatListOption} from './@Types/ItemFlatListProfile';
 import Styles from './style';
 
-const ItemFlatListProfile = ({item}: {item: ItemFlatListOption}) => {
+const ItemFlatList = ({item}: {item: ItemFlatListOption}) => {
   return (
     <View style={Styles.ItemContainer}>
       <Icon
@@ -24,4 +24,4 @@ const ItemFlatListProfile = ({item}: {item: ItemFlatListOption}) => {
   );
 };
 
-export default ItemFlatListProfile;
+export default ItemFlatList;

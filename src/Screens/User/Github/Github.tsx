@@ -5,7 +5,7 @@ import {useSelector} from 'react-redux';
 import Avatar from '../../../Components/Avatar/Avatar';
 import DropShadowContainer from '../../../Components/DropShadowContainer/DropShadowContainer';
 import {ItemFlatListOption} from '../../../Components/ItemFlatListProfile/@Types/ItemFlatListProfile';
-import ItemFlatListProfile from '../../../Components/ItemFlatListProfile/ItemFlatListProfile';
+import ItemFlatList from '../../../Components/ItemFlatListProfile/ItemFlatListProfile';
 import {BASE_URL_GITHUB} from '../../../constants/constants';
 import type {User} from '../../../Redux/@Types/User';
 import Icon from '../../../router/Utils/Icon';
@@ -98,7 +98,7 @@ const Github: React.FC<GithubProps> = () => {
               })}
               <FlatList
                 data={Options}
-                renderItem={ItemFlatListProfile}
+                renderItem={ItemFlatList}
                 contentContainerStyle={Styles.FlatList}
                 style={Styles.FlatList}
               />
